@@ -1,1 +1,47 @@
-
+- Médicos
+  - GET /medico
+  - GET /medico/legajo
+  - POST /medico
+    - Legajo
+    - Nombre
+    - Especialidad
+  - PUT /medico/legajo
+  
+- Pacientes
+  - GET /paciente
+  - GET /paciente/dni
+  - POST /paciente
+    - Dni
+    - Nombre
+    - Obra Social
+  - PUT /paciente/dni
+  
+- Consultorios
+  - GET /consultorio
+  - GET /consultorio/cuit
+  - POST /consultorio
+    - CUIT
+    - Nombre
+    - Dirección
+    - Medicos (Array [Legajos])
+  - PUT /consultorio/cuit
+  
+- Turnos
+  - GET /turno
+  - GET /turno/id
+  - POST /turno
+    - idturno
+    - Legajo Médico
+    - DNI Paciente
+    - CUIT Consultorio
+    - Fecha y Hora
+  - PUT /turno/id
+  
+- Especialidades
+  - GET /especialidad
+  - GET /especialidad/id
+  - POST /especialidad
+    - idespecialidad
+    - Nombre
+    - Medicos (Array [Legajos])
+  - PUT /especialidad/id
