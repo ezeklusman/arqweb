@@ -16,23 +16,13 @@
     - Obra Social
   - PUT /pacientes/{dni}
   
-- Consultorios
-  - GET /consultorios
-  - GET /consultorios/{cuit}
-  - POST /consultorios
-    - CUIT
-    - Nombre
-    - Dirección
-    - Medicos (Array [{Legajos}])
-  - PUT /consultorios/{cuit}
-  
 - Turnos
   - GET /turnos
   - GET /turnos/{id}
   - POST /turnos
-  - Legajo Médico
+    - ID
+    - Legajo Médico
     - DNI Paciente
-    - CUIT Consultorio
     - Fecha y Hora
   - PUT /turnos/{id}
   
@@ -40,7 +30,7 @@
   - GET /especialidades
   - GET /especialidades/{id}
   - POST /especialidades
-    - idespecialidad
+    - id
     - Nombre
     - Medicos (Array [{Legajos}])
   - PUT /especialidades/{id}
