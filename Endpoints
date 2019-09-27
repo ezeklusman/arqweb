@@ -1,5 +1,6 @@
 - Médicos
-	- GET /medicos
+	
+- GET /medicos
   {
    "Legajo": 12345
   },
