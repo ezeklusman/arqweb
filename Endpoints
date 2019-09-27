@@ -1,36 +1,154 @@
 - Médicos
-  - GET /medicos
-  - GET /medicos/{legajo}
-  - POST /medicos
-    - Legajo
-    - Nombre
-    - Especialidad
-  - PUT /medicos/{legajo}
-  
+	- GET /medicos
+  {
+   "Legajo": 12345
+  },
+  {
+   "Legajo": 54321
+  },
+  {
+    "Legajo": 67890
+  }
+
+
+- GET /medicos/{legajo}
+  {
+   "Legajo": 12345,
+    "Nombre": "Juan Carlos Genio",
+    "Especialidad": "Traumatología"
+  }
+
+- POST /medicos
+  {
+   "Legajo": 12345,
+    "Nombre": "Juan Carlos Genio",
+    "Especialidad": "Traumatología"
+  }
+
+- PUT /medicos/{legajo}
+  {
+    "Nombre": "Juan Carlos Genio",
+    "Especialidad": "Traumatología"
+  }
+	
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+	
 - Pacientes
   - GET /pacientes
-  - GET /pacientes/{dni}
-  - POST /pacientes
-    - Dni
-    - Nombre
-    - Obra Social
+ 	 {
+ 	   "Dni": 20123123
+ 	 },
+	  {
+ 	   "Dni": 30321321
+		},
+	  {
+ 	   "Dni": 23456456
+ 	 }
+
+  - GET / pacientes/{dni}
+  	{
+    	"Dni": 20123123,
+    	"Nombre": "Marco Antonio Solo",
+    	"Obra Social": "OSDE"
+  	}
+
+ 	- POST /pacientes
+  	{
+    	"Dni": 20123123,
+    	"Nombre": "Marco Antonio Solo",
+    	"Obra Social": "OSDE"
+  	}
+
   - PUT /pacientes/{dni}
-  
-- Turnos
-  - GET /turnos
-  - GET /turnos/{id}
-  - POST /turnos
-    - ID
-    - Legajo Médico
-    - DNI Paciente
-    - Fecha y Hora
-  - PUT /turnos/{id}
-  
-- Especialidades
-  - GET /especialidades
-  - GET /especialidades/{id}
-  - POST /especialidades
-    - id
-    - Nombre
-    - Medicos (Array [{Legajos}])
-  - PUT /especialidades/{id}
+  	{
+    	"Nombre": "Marco Antonio Solo",
+    	"Obra Social": "OSDE"
+  	}
+		
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+-Turnos
+	-GET /turnos 
+		{ 
+		“Id”: 4321
+		},
+		{
+		“Id”: 5678
+		},
+		{
+		“Id”: 9012
+		}
+
+	-GET /turnos/{id}
+		{
+		“Id”: 4321,
+		“Legajo Medico”: 1234,
+		“DNI Paciente”: 40555666,
+		“Fecha y hora”: 19/09/20 15:30 
+		}
+
+	-POST /turnos
+		{	
+		“Id”: 4321,
+		“Legajo Medico”: 1234,
+		“DNI Paciente”: 40555666,
+		“Fecha y hora”: 19/09/20 15:30 
+		}
+
+	-PUT /turnos/{id}
+		{
+ 		“Legajo Medico”: 1234,
+		“DNI Paciente”: 40555666,
+		“Fecha y hora”: 19/09/20 15:30
+		}
+
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+-Especialidades
+	-GET /especialidades
+		{
+		“id”: 715,
+		},
+		{
+		“id”: 698,
+		}
+		{
+		“id”: 753,
+		}
+
+	-GET /especialidades/{id}
+		{
+		“Id”: 715,
+		“Nombre”: “traumatología”, 
+		“Médicos”:
+		{
+		“Legajo”:12345
+		},
+		{
+		“Legajo”:54321
+		}
+	}
+		
+	-POST /especialidades/{id}
+		{
+		“Id”: 715,
+		“Nombre”: “traumatología”, 
+		“Médicos”:
+		{
+			“Legajo”:12345
+		},
+		{
+			“Legajo”:54321
+		}
+	}
+
+
+	- PUT /especialidades/{id}
+		{
+		“Nombre”: “traumatología”, 
+		“Médicos”:
+		{
+		“Legajo”:12345
+		},
+		{
+		“Legajo”:54321
+		}
+	}
