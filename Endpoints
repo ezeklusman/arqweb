@@ -83,7 +83,9 @@
 		{
 		“Id”: 4321,
 		“Legajo Medico”: 1234,
+		"Nombre Medico": Juan Carlos Genio,
 		“DNI Paciente”: 40555666,
+		"Nombre Paciente": Juan Meza,
 		“Fecha y hora”: 19/09/20 15:30 
 		}
 
@@ -91,14 +93,18 @@
 		{	
 		“Id”: 4321,
 		“Legajo Medico”: 1234,
+		"Nombre Medico": Juan Carlos Genio,
 		“DNI Paciente”: 40555666,
+		"Nombre Paciente": Juan Meza,
 		“Fecha y hora”: 19/09/20 15:30 
 		}
 
 	-PUT /turnos/{id}
 		{
  		“Legajo Medico”: 1234,
+		"Nombre Medico": Juan Carlos Genio,
 		“DNI Paciente”: 40555666,
+		"Nombre Paciente": Juan Meza,
 		“Fecha y hora”: 19/09/20 15:30
 		}
 
