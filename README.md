@@ -4,4 +4,4 @@ Grupo: ArqForever
 
 Integrantes: Ezequiel Klusman y Francisco Ezequiel Blardoni
 
-Negocio elegido: Administración de Médicos y Consultorios
+Negocio elegido: Administración de Turnos Médicos
