@@ -1,0 +1,63 @@
+  h4.card-title {
+    float: left;
+  }
+  @media (min-width: 800px) {
+    .navbar-brand { display: none; }
+  }
+  @media (max-width: 800px) {
+    h4.card-title { display: none; }
+    h4.button-nuevo { display: inline; }
+  }
+  h4.button-nuevo i {
+    position: relative;
+    top: 0px;
+    font-size: 16px;
+    margin-right: 5px;
+  }
+  .entity-list .button-modificar, .entity-list .button-guardar, .entity-list .button-cancelar, .entity-list .button-eliminar, .button-nuevo {
+    cursor: pointer;
+    display: inline;
+  }
+  .btn { margin: 0 3px !important ; }
+  .entity-list tbody td .loading {
+  	width: 16px;
+  	display: none;
+  }
+  .entity-list tbody td div.show {
+    display: inline;
+  }
+  .entity-list tbody td div.hide {
+    display: none;
+  }
+  .entity-list tbody td div.dato {
+    padding-left: 7px;
+  }
+  .entity-list tbody td input {
+    padding-left: 5px;
+  }
+
+  .entity-list tbody tr:hover {
+  	background-color: #f6f6f6;
+  }
+  .entity-list tbody tr td.small {
+    height: 2px;
+    padding: 0;
+  }
+  .entity-list tbody tr.selected {
+    background-color: aliceblue;
+  }
+  .entity-list tbody tr {transition: background-color 0.8s ease;}
+  .entity-list tbody tr td .button-guardar, .entity-list tbody tr td .button-cancelar, .entity-list tbody tr td .button-eliminar  { display: none; }
+  .entity-list tbody tr td input, .entity-list tbody tr td select { display: none; }
+  .entity-list tbody tr.selected div.dato { display: none; }
+  .entity-list tbody tr.selected input, .entity-list tbody tr.selected select { display: block; }
+  .entity-list tbody tr.selected .button-modificar{ display: none; }
+  .entity-list tbody tr.selected .button-guardar{ display: inline; }
+  .entity-list tbody tr.selected .button-cancelar{ display: inline; }
+  .entity-list tbody tr.selected .button-eliminar{ display: inline; }
+  .entity-list tbody tr.nuevorow .button-eliminar{ display: none; }
+  .entity-list tbody tr.saving .button-modificar,
+  .entity-list tbody tr.saving .button-guardar,
+  .entity-list tbody tr.saving .button-cancelar { display: none; }
+  .entity-list tbody tr.saving .loading { display: inline; }
+  .entity-list .hide { display: none; }
